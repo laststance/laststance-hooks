@@ -1,0 +1,20 @@
+{
+  "name": "laststance-hooks",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.33.4",
+  "scripts": {
+    "registry:build": "shadcn build",
+    "registry:check": "pnpm registry:build && node scripts/check-registry.mjs",
+    "typecheck": "tsc --noEmit",
+    "validate": "pnpm registry:check && pnpm typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.2",
+    "@types/react": "^19.2.14",
+    "react": "^19.2.6",
+    "shadcn": "^4.7.0",
+    "typescript": "^6.0.3"
+  }
+}

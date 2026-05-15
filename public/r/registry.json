@@ -1,0 +1,40 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "laststance-hooks",
+  "homepage": "https://github.com/laststance/laststance-hooks",
+  "items": [
+    {
+      "name": "lifecycle-effects",
+      "type": "registry:hook",
+      "title": "Lifecycle Effect Hooks",
+      "description": "Explicit React 19 lifecycle effect hooks for mount, update, unmount, render, and useEffect-equivalent cycles.",
+      "files": [
+        {
+          "path": "registry/default/lifecycle-effects/use-initial-effect.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-initial-effect.ts"
+        },
+        {
+          "path": "registry/default/lifecycle-effects/use-update-effect.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-update-effect.ts"
+        },
+        {
+          "path": "registry/default/lifecycle-effects/use-unmount-effect.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-unmount-effect.ts"
+        },
+        {
+          "path": "registry/default/lifecycle-effects/use-render-effect.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-render-effect.ts"
+        },
+        {
+          "path": "registry/default/lifecycle-effects/use-cycle-effect.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-cycle-effect.ts"
+        }
+      ]
+    }
+  ]
+}
