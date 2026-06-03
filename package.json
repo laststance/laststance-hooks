@@ -8,13 +8,21 @@
     "registry:build": "shadcn build",
     "registry:check": "pnpm registry:build && node scripts/check-registry.mjs",
     "typecheck": "tsc --noEmit",
-    "validate": "pnpm registry:check && pnpm typecheck"
+    "validate": "pnpm registry:check && pnpm typecheck",
+    "prepare": "husky",
+    "prettier": "prettier --ignore-unknown --write ."
   },
   "devDependencies": {
     "@types/node": "^25.6.2",
     "@types/react": "^19.2.14",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.7",
+    "prettier": "^3.8.3",
     "react": "^19.2.6",
     "shadcn": "^4.7.0",
     "typescript": "^6.0.3"
+  },
+  "lint-staged": {
+    "*": "prettier --ignore-unknown --write"
   }
 }
