@@ -6,6 +6,7 @@ export default defineConfig([
   ...tsPrefixer,
   {
     files: ['registry/**/*.ts', 'registry/**/*.tsx'],
+    ignores: ['registry/**/*.test.ts'],
     plugins: {
       'react-hooks': reactHooks,
     },

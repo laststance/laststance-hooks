@@ -11,5 +11,10 @@
     "noEmit": true,
     "skipLibCheck": true
   },
-  "include": ["registry/**/*.ts", "test-d/**/*.ts"]
+  "include": [
+    "registry/**/*.ts",
+    "test-d/**/*.ts",
+    "vitest.config.ts",
+    "vitest-setup.ts"
+  ]
 }
